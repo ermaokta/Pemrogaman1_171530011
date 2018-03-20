@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>P4 - praktikum12</title>
+
+        <script language="JavaScript">
+        function jumlah(){
+            var bil1= parseFloat(frcontoh.bilangan1.value);
+            var bil2 = parseFloat(frcontoh.bilangan2.value);
+                if(isNAN (bil1)){
+                    bil1=0.0;
+                }
+                if(isNAN (bil2)){
+                    bil2=0.0;
+                }    
+                var hasil = bil1 + bil2;
+                frcontoh.bilhasil.value = hasil;
+        }
+        </script>
+
+    </head>
+    <body>
+
+        <form name="frcontoh">
+                <h3> memasukan data lewat keyboard</h3>
+                bilangan pertama :<br>
+                <input type="text" size="25" name="bilangan1"><br>
+                bilangan kedua :<br>
+                <input type="text" size="25" name="bilangan2" obchane="jumlah()"><br><br>
+                hasil :<br>
+                <input type="text" size="25" name="bilhasil"><br><br>
+        </form>
+    </body>
+</html>

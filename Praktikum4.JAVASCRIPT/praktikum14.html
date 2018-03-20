@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>P4 - Praktikum14</title>
+    </head>
+    <body>
+        <script language="JavaScript">
+        function pilih(){
+            var vprodi = (ffrom.cbproi.value);
+            fform.txtprodi.value = vprodi;
+        }
+        </script>
+
+        <form name= "ffrom">
+            <h4> penggunaan objek select</h4><hr>
+            prodi AKN Kajen :
+            <select name="cbprodi" size="1" onchange="pilih()">
+                <option value =""> -- pilih -- </option>
+                <option value ="D2-TI"> D2 Teknik informatika </option>
+                <option value ="D2-TM"> D2 Tekknik mesin </option>
+                <option value ="D2-TK"> D2 Teknik kimia </option>
+            </select>
+
+            <input type="reset" value="ulang">
+
+            output progam studi :
+            <input type="text" name="txtprodi" size="30">
+        </form>
+    </body>
+</html>
